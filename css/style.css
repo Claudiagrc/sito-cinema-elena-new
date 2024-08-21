@@ -195,10 +195,16 @@ h2 {
     }
 
 
+/* .grid {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap:16px
+} */
+
 .grid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap:16px
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 16px
 }
 
 
@@ -208,11 +214,41 @@ figure img {
     width: 100%;
     height: 100%;
     object-fit: cover;
+    border-radius: 10px;
   }
+
 
 figcaption a {
     color: #fff;
 }
+figure a :hover {
+    color: #A1BFFF;
+}
+
+figure img {
+    display: block;
+    transition: transform 0.3s ease;
+}
+
+figure:hover img {
+    transform: scale(1.1);
+    opacity: 0.5;
+    
+}
+figure:hover figcaption a{
+    opacity: 1;
+    color: #A1BFFF;
+      
+}
+
+
+
+
+
+
+
+
+
 
 .breadcrumb {
     list-style: none;
@@ -247,6 +283,18 @@ figcaption a {
   }
   .infoFilm img{
     width: 60%;
+  }
+
+  .infoIndex img{
+    width: 100%;
+    height: 330px;
+    object-fit: cover;
+  }
+
+  .borderIndex p{
+    border: 3px solid #A1BFFF;    
+    padding: 15px 0 0 15px;
+    
   }
 
   .snack{
@@ -302,11 +350,10 @@ footer .navbar__list a{
         max-width: 540px;
     }
   
-    .grid {
+    /* .grid {
         grid-template-columns: repeat(3, 1fr);
         width: auto;
-    }
-
+    } */
     .navbar__list{
         flex-direction: row;
     }
@@ -343,6 +390,10 @@ footer .navbar__list a{
         margin: 0;
       }
 
+      .borderIndex p{        
+        height: 310px;
+      }
+
 }
 
 @media only screen and (min-width: 992px) {
@@ -354,6 +405,8 @@ footer .navbar__list a{
         top: 90%;
         left: 30%;
     }
+
+    
     
 }
 
