@@ -18,7 +18,7 @@ h1,h2,h3,h4,h5,h6{
 a{
     text-decoration: none;
 }
-a:hover {
+a :hover {
     text-decoration: underline;
 }
 nav{
@@ -176,7 +176,12 @@ main{
 h1,h3{
     color: #C9B2FF;
 }
-
+a > div > .borderIndex > p{
+    color: #fff;
+}
+a:hover{
+    color: #fff;
+}
 h2 {
 
     position: relative;
