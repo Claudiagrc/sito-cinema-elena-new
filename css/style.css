@@ -116,7 +116,7 @@ main{
 }
 
 .container__slider{
-    background-image: url(../img/index/1_home.jpeg);
+    background-image: url(../img/slide/1_home.jpeg);
     box-shadow: inset 0 0 0 2000px rgb(0 0 0 / 57%);
     
     height: 489px;
@@ -127,7 +127,7 @@ main{
 }
 
 .container__slider__midCafe{
-    background-image: url(../img/mid_cafe/1_mid_cafe.jpg);
+    background-image: url(../img/slide/1_mid_cafe.jpg);
     box-shadow: inset 0 0 0 2000px rgb(0 0 0 / 57%);    
     height: 489px;
     background-position: center;
@@ -137,7 +137,7 @@ main{
 }
 
 .container__slider_progetto{
-    background-image: url(../img/index/9_progetto.jpeg);
+    background-image: url(../img/slide/9_progetto.jpeg);
     box-shadow: inset 0 0 0 2000px rgb(0 0 0 / 57%);
     
     height: 489px;
@@ -148,7 +148,7 @@ main{
 }
 
 .container__slider_timburton{
-    background-image: url(../img/dentro_la_mente_di_tim_burton/1_tim_burton.jpg);
+    background-image: url(../img/slide/1_tim_burton.jpg);
     box-shadow: inset 0 0 0 2000px rgb(0 0 0 / 57%);
     
     height: 489px;
@@ -159,7 +159,7 @@ main{
 }
 
 .container__slider_chisiamo{
-    background-image: url(../img/chi_siamo/cefbeea4-b83a-4527-bbee-f826613f986e.jpg);
+    background-image: url(../img/slide/cefbeea4-b83a-4527-bbee-f826613f986e.jpg);
     box-shadow: inset 0 0 0 2000px rgb(0 0 0 / 57%);
     
     height: 489px;
@@ -170,7 +170,7 @@ main{
 }
 
 .container__slider_info{
-    background-image: url(../img/info/1_info.jpeg);
+    background-image: url(../img/slide/1_info.jpeg);
     box-shadow: inset 0 0 0 2000px rgb(0 0 0 / 57%);  
     height: 489px;
     background-position: center;
@@ -198,6 +198,8 @@ main{
     margin: 0 15px;
    /*  width: 100%; */
     justify-content: flex-start;
+    margin-top: 25px;
+    margin-bottom: 25px;
 }
 
 .row{
@@ -361,11 +363,13 @@ h2 {
     gap: 16px
 }
 
-
+.figure{
+    margin-top: 20px;
+}
 
 
 figure img {
-    width: 100%;
+    width: 90%;
     height: 100%;
     object-fit: cover;
     border-radius: 10px;
